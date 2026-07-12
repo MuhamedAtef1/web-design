@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+    <style>
+        fieldset {
+            width: 400px;       
+            margin: 100px auto;  
+            padding: 30px;     
+        }
+    </style>
+</head>
+
+<body>
+    <form autocomplete="on" method="get">
+        <fieldset>
+            <legend c>Register form</legend>
+
+            <label>first Name</label>
+            <input type="text" name="firstName" maxlength="5" pattern="[A-Za-z]+" title="Only letters">
+            <br>
+
+            <label>email</label>
+            <input type="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+            <br>
+
+            <label>phone</label>
+            <input type="text" name="phoneNum" maxlength="11" pattern="(010|011|012|015)[0-9]{8}" title="Enter a valid Egyptian phone number" >
+            <br>
+
+            <input type="file" name="file" accept=".png">
+            <br>
+
+            <label>Course</label>
+            <input list="courses" name="course" placeholder="Choose a course">
+            <datalist id="courses">
+                <option value="HTML"></option>
+                <option value="CSS"></option>
+                <option value="JavaScript"></option>
+                <option value="Bootstrap"></option>
+                <option value="React"></option>
+                <option value="Node.js"></option>
+            </datalist>
+            <br>
+
+            <input type="date" name="date" required>
+            <br>
+
+
+            <label>comment</label>
+            <textarea name="comment" required pattern="[A-Za-z]+"></textarea>
+            <br>
+
+
+            <input type="range" min="100" max="200" name="range">
+            <br>
+
+            <label>gender</label>
+            <input type="radio" name="gender" value="male" checked>
+            <label>male</label>
+            <input type="radio" name="gender" value="female">
+            <label>female</label>
+            <br>
+
+
+            <label>Track</label>
+            <input type="checkbox" name="track" value="web">
+            <label>Web Design</label>
+            <input type="checkbox" name="track" value="net">
+            <label>Network</label>
+            <input type="checkbox" name="track" value="bk">
+            <label>Backend</label>
+            <br>
+
+
+            <button type="reset">reset</button>
+            <button>submit</button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
