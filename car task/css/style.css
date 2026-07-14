@@ -1,0 +1,25 @@
+.animation-card{
+    position: absolute;
+    top: 13%;
+    right: 3%;
+
+    animation-name: car;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+.animation-card img {
+    width: 200px;
+    height: auto; 
+}
+.relative{
+    position: relative;
+}
+
+@keyframes car{
+    from{
+        
+    }
+    to{
+        transform: translateX(-1300px);
+    }
+}
