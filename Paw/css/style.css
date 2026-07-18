@@ -1,0 +1,47 @@
+.bg-img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url("../images/WhatsApp Image 2026-07-16 at 9.25.52 AM.jpeg");
+    width: 100%;
+    height: 100vh;
+    background-size: 130% 114%;
+}
+.bg-img p{
+    font-size: 11px;
+    font-weight: 500;
+}
+.container nav{
+    padding-top: 1%;
+    padding-bottom: 10%;
+}
+.row img{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+.view-more{
+    margin: 2% 0 2% auto;
+    width: 200px;
+}
+.nav-pills {
+    --bs-nav-pills-link-active-bg: #101828;
+}
+.nav{
+    --bs-nav-link-color: black ;
+}
+.bg-color{
+    background-color: #101828;
+}
+.bg-color2{
+    background-color: #DEDEDE;
+    width: 260px;
+}
+.blocks{
+    font-size: 12px;
+}
+.mg{
+    margin: 1% auto;
+}
+.mg2{
+    margin: auto 1%;
+}
+.gapp{
+    gap: 32%;
+}
